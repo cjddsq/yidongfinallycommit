@@ -1,0 +1,327 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#nav {
+    /* position: fixed; */
+    width: 100%;
+    height: 44px;
+    background-color: #1a1819;
+}
+#nav-1 {
+    width: 1200px;
+    height: 44px;
+    margin: 0 auto;
+}
+.logo {
+    float: left;
+    width: 100px;
+    height: 44px;
+}
+#up {
+    float: left;
+    line-height: 44px;
+    cursor: pointer;
+    color: #e9a682;
+}
+#log_out {
+    float: right;
+    display: none;
+    margin-top: -30px;
+    cursor: pointer;
+    color: #ff0;
+}
+.username {
+    display: none;
+    margin-top: 10px;
+    height: 23px;
+    color: #fcc535;
+}
+#bgdiv {
+    position: fixed;
+    left: 0; 
+    top: 0;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99; 
+    background-image: url(summer_20191.jpg);
+    background-size: cover;
+}
+input {
+    margin-left: 60px;
+    font-size: 25px;
+    color: black;
+}
+.dowebok {
+    position: fixed;
+    width: 400px;
+    left: 15%;
+    top: 50%;
+    height: 300px;
+    background-color: #97cdcf;
+    padding: 1px;
+    z-index: 100;
+    border-radius: 10%;
+} 
+.form-item {
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#user {
+    margin-top: 80px;
+    width: 280px;
+    height: 40px;
+    border: 1px solid #fcc535;
+}
+#password {
+    margin-top: 20px;
+    width: 280px;
+    height: 40px;
+    border: 1px solid #fcc535;
+}
+#md {
+    margin-top: 10px;
+}
+#submit {
+    margin-top: 26px;
+    height: 40px;
+    width: 400px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #e1914c;
+}
+.reg {
+    float: left;
+}
+.forget {
+    float: right;
+}
+#nav-2 {
+    margin-left: 100px;
+}
+#nav-2 a {
+    margin: 0 20px;
+    line-height: 44px;
+    text-decoration: none;
+    color: #fff;
+    font-family: serif;
+}
+#nav-2 a:hover {
+    color: #d2d1c6;
+}
+#nav-3 {
+    position: fixed;
+    right: 60px;
+    top: 250px;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    z-index: 1;
+}
+.dropdown-content {
+    display: none;
+    width: 100px;
+    box-shadow: #a12200 0 2px 3px 2px;
+    font-size: 15px;
+    z-index: 1;
+}
+.dropdown-content a {
+    display: block;
+    padding-right: 30px;
+    padding: 5px 5px;
+    text-decoration: none;
+    color: red;
+    text-align: center;
+}
+#shop {
+    width: 100%;
+    height: auto;
+}
+#elsethings {
+    width: 100%;
+    height: 60px;
+    background-color: #f5f5f5;
+}
+.else {
+    width: 1000px;
+    height: 60px;
+    margin: 0 auto;
+}
+#sortByPrice {
+    float: left;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 15px;
+}
+#sortPriceUp {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    height: 0;
+    width: 0;
+    border: 4px;
+    /*style依次是上边框、右、下、左*/
+    /*想实现向下的三角就把上边框设置为实现其余几个边框都是虚线并且颜色设置为透明*/
+    border-style: dashed dashed dashed solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    color: #ff0000;
+    cursor: pointer;
+}
+#sortPriceDown {
+    position: absolute;
+    top: 35px;
+    left: 50px;
+    height: 0;
+    width: 0;
+    border: 4px;
+    /*style依次是上边框、右、下、左*/
+    /*想实现向下的三角就把上边框设置为实现其余几个边框都是虚线并且颜色设置为透明*/
+    border-style: solid dashed dashed dashed;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    color: #ff0000;
+    cursor: pointer;
+}
+#sortByHot span {
+    width: 30px;
+    height: 40px;
+    line-height: 40px;
+}
+#sortByHot {
+    float: left;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 15px;
+}
+#sortHotUp {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    height: 0;
+    width: 0;
+    border: 4px;
+    /*style依次是上边框、右、下、左*/
+    /*想实现向下的三角就把上边框设置为实现其余几个边框都是虚线并且颜色设置为透明*/
+    border-style: dashed dashed dashed solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    color: #ff0000;
+    cursor: pointer;
+}
+#sortHotDown {
+    position: absolute;
+    top: 35px;
+    left: 50px;
+    height: 0;
+    width: 0;
+    border: 4px;
+    /*style依次是上边框、右、下、左*/
+    /*想实现向下的三角就把上边框设置为实现其余几个边框都是虚线并且颜色设置为透明*/
+    border-style: solid dashed dashed dashed;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    color: #ff0000;
+    cursor: pointer;
+}
+.select {
+    float: left;
+    line-height: 60px;
+}
+.shopbar {
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+}
+.goods {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    /* margin: 15px; */
+}
+.commodity {
+    margin-left: 80px;
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: #f5f5f5;
+    border: 2px solid #fff;
+}
+.commodity:hover {
+    border: 2px solid #f5f5f5;
+}
+.commodity img {
+    width: 250px;
+    height: 249px;
+}
+.introduction {
+    width: 260px;
+}
+.pagebar {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    height: 30px;
+    width: 300px;
+    margin-top: 550px;
+    margin: 0 auto; 
+    line-height: 30px;
+}
+.total {
+    margin: 0 auto;
+    height: 30px;
+    width: 85px;
+}
+.page {
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+#last-page {
+    cursor: pointer;
+}
+#next-page {
+    cursor: pointer;
+}
+#selected {
+    border-radius: 50%;
+    background-color: red;
+    color: #ffffff;
+}
+#hover {
+    border-radius: 50%;
+    background-color: red;
+    color: #ffffff;
+}
+.wantPage {
+    width: 180px;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+}
+.wantPage input {
+    width: 20px;
+    height: 20px;
+    margin-left: 0;
+    line-height: 20px;
+    color: #ff0000;
+    background-color: #ff0;
+}
